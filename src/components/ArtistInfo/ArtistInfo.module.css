@@ -1,0 +1,52 @@
+@value colors: '../../stylesheet/vars.module.css';
+@value color_red,color_bg,color_shadow,color_white from colors;
+
+.artistInfoWrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.artistName {
+  color: color_shadow;
+  text-shadow: 1px 1px 1px color_white;
+  margin-bottom: 40px;
+}
+
+.imageTagsListWrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.artistImage {
+  margin-right: 30px;
+}
+
+.tagsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 70%;
+}
+
+.tagsListItem {
+  cursor: pointer;
+  color: #61677c;
+  padding: 10px;
+  border-radius: 10px;
+
+  box-shadow: -5px -5px 20px color_white, 5px 5px 20px color_shadow;
+  transition: all 0.2s ease-in-out;
+
+  margin-bottom: 15px;
+}
+
+.tagsListItem:hover {
+  box-shadow: -2px -2px 5px color_white, 2px 2px 5px color_shadow;
+}
+
+.tagsListItem:not(:last-of-type) {
+  margin-right: 20px;
+}

@@ -1,0 +1,10 @@
+@value colors: '../../stylesheet/vars.module.css';
+@value color_bg from colors;
+
+body {
+  background-color: color_bg;
+}
+
+.mainWrapper {
+  padding: 3% 10%;
+}

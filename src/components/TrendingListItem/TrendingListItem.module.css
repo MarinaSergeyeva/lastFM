@@ -1,0 +1,41 @@
+@value colors: '../../stylesheet/vars.module.css';
+@value color_red,color_bg,color_shadow,color_white from colors;
+
+.trendingListItem {
+  width: 250px;
+
+  border-radius: 32px;
+  padding: 20px 30px;
+  box-shadow: -5px -5px 20px color_white, 5px 5px 20px color_shadow;
+  transition: all 0.2s ease-in-out;
+
+  margin-bottom: 40px;
+}
+
+.trendingListItem:hover {
+  box-shadow: -2px -2px 5px color_white, 2px 2px 5px color_shadow;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70px;
+  margin-bottom: 10px;
+}
+
+.artistName {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.trackLink {
+  color: #61677c;
+}
+
+.trackLink:hover,
+.artistName:hover {
+  color: color_red;
+  text-shadow: 1px 1px 1px color_white;
+}
