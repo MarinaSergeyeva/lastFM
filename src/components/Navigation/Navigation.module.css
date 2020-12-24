@@ -1,0 +1,30 @@
+@value colors: '../../stylesheet/vars.module.css';
+@value color_red,color_bg,color_shadow,color_white from colors;
+
+.navigation {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.navigationItem:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.navigationItemLink {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  text-shadow: 1px 1px 1px color_white;
+  color: #61677c;
+  text-transform: uppercase;
+}
+
+.navigationItemLinkActive {
+  color: color_red;
+}
+
+.navigationItemLink:hover {
+  color: color_red;
+}

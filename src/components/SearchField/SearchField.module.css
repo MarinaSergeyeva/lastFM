@@ -1,0 +1,60 @@
+@value colors: '../../stylesheet/vars.module.css';
+@value color_red,color_bg,color_shadow,color_white from colors;
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: color_bg;
+  text-shadow: 1px 1px 0 color_white;
+}
+
+input {
+  margin-right: 30px;
+  box-shadow: inset 2px 2px 5px color_shadow, inset -5px -5px 10px color_white;
+  width: 300px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 2px color_shadow, inset -1px -1px 2px color_white;
+}
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px color_white, 5px 5px 20px color_shadow;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px color_white, 2px 2px 5px color_shadow;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px color_shadow, inset -1px -1px 2px color_white;
+}
+
+.searchFieldWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchTitle {
+  color: color_shadow;
+  text-shadow: 1px 1px 1px color_white;
+  margin-bottom: 30px;
+}
+
+.searchForm {
+  margin-bottom: 40px;
+}

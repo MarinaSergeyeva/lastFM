@@ -1,29 +1,27 @@
 @value colors: '../../stylesheet/vars.module.css';
 @value color_red,color_bg,color_shadow,color_white from colors;
 
-.trendingListItem {
-  width: 250px;
+.songWrapper {
+  cursor: pointer;
 
   border-radius: 32px;
   padding: 20px 30px;
   box-shadow: -5px -5px 20px color_white, 5px 5px 20px color_shadow;
   transition: all 0.2s ease-in-out;
 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.trendingListItem:hover {
+.songWrapper:hover {
   box-shadow: -2px -2px 5px color_white, 2px 2px 5px color_shadow;
 }
 
-.infoWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 70px;
+.trackInfo {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
-.artistName {
-  cursor: pointer;
+.artistInfo {
+  font-size: 20px;
+  font-weight: 700;
 }
