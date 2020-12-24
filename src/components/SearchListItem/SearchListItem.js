@@ -5,6 +5,7 @@ const SearchListItem = ({ track, artist }) => {
   return (
     <div className={style.songWrapper}>
       <p className={style.trackInfo}>{track}</p>
+      <span>-</span>
       <p className={style.artistInfo}>{artist}</p>
     </div>
   );

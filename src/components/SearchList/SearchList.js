@@ -16,7 +16,7 @@ const SearchList = () => {
               artist={item.artist}
             />
           ))
-        : 'No tracks found'}
+        : ''}
     </>
   );
 };

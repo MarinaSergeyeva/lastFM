@@ -26,4 +26,16 @@
 
 .artistName {
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.trackLink {
+  color: #61677c;
+}
+
+.trackLink:hover,
+.artistName:hover {
+  color: color_red;
+  text-shadow: 1px 1px 1px color_white;
 }

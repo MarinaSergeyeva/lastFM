@@ -11,6 +11,7 @@ const SearchField = ({ page, setPage }) => {
 
   const search = e => {
     if (!searchQuery) return;
+
     setPage(1);
     dispatch(searchListActions.resetSearchSuccess());
     dispatch(searchListOperations.getSearchList(searchQuery, page));
@@ -30,6 +31,7 @@ const SearchField = ({ page, setPage }) => {
         <input
           type="text"
           name="search"
+          value={searchQuery}
           placeholder="Enter song ..."
           onChange={handleSearchChange}
         />

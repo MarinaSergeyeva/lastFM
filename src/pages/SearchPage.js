@@ -13,8 +13,7 @@ const SearchPage = () => {
     <div className={style.searchPageWrapper}>
       <SearchField page={page} setPage={setPage} />
       <SearchList searchList={searchList} />
-      {console.log('page', page)}
-      {page > 0 && <LoadMoreBtn page={page} setPage={setPage} />}
+      {searchList.length > 0 && <LoadMoreBtn page={page} setPage={setPage} />}
     </div>
   );
 };
