@@ -12,7 +12,7 @@
 /build
 
 # deploy
-/build
+/.netlify
 
 # misc
 .DS_Store
